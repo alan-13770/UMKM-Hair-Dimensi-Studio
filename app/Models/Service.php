@@ -12,12 +12,14 @@ class Service extends Model
     protected $table = 'service';
 
 
-    public $timestamps = true;
+    public $timestamps = false;
 
     protected $fillable = [
         'nama',
-        'layanan',
         'harga',
+        'layanan',
+        
+
     ];
 
 

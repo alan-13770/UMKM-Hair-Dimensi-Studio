@@ -12,28 +12,23 @@
             </div>
         @endif
 
-        <form action="{{ route('service.store') }}" method="POST">
+        <form action="{{ route('service.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="mb-4">
                 <label class="block text-sm font-medium">Nama Layanan</label>
                 <input type="text" name="nama" class="mt-1 block w-full border-gray-300 rounded-md" required />
             </div>
             <div class="mb-4">
-                <label class="block text-sm font-medium">Jenis Layanan</label>
+                <label class="block text-sm font-medium">Harga</label>
+                <input type="text" name="harga" class="mt-1 block w-full border-gray-300 rounded-md" step="0.01" required />
+            </div>
+            <div class="mb-4">
+                <label class="block text-sm font-medium">Layanan</label>
                 <input type="text" name="layanan" class="mt-1 block w-full border-gray-300 rounded-md" required />
             </div>
             <div class="mb-4">
-                <label class="block text-sm font-medium">Harga</label>
-                <input type="number" name="harga" class="mt-1 block w-full border-gray-300 rounded-md" step="0.01" required />
-            </div>
-
-            <div class="mb-4">
-                <label class="block text-sm font-medium">Tanggal Dibuat</label>
-                <input type="text" name="created_at" class="mt-1 block w-full border-gray-300 rounded-md" value="{{ now()->toDateTimeString() }}" readonly />
-            </div>
-            <div class="mb-4">
-                <label class="block text-sm font-medium">Tanggal Terakhir Diperbarui</label>
-                <input type="text" name="updated_at" class="mt-1 block w-full border-gray-300 rounded-md" value="{{ now()->toDateTimeString() }}" readonly />
+                <label class="block text-sm font-medium">Gambar</label>
+                <input type="file" name="gambar" class="mt-1 block w-full" accept="image/*" required />
             </div>
 
             <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Simpan</button>

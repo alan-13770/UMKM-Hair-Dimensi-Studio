@@ -1,8 +1,9 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\TestimoniController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TestimoniController;
+use App\Http\Controllers\ServiceController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -23,4 +24,9 @@ Route::resource('testimoni', TestimoniController::class);
 Route::get('formtestimoni', function () {
     return view('testimoni.create');
 });
+
+Route::resource('service', ServiceController::class);
+
+
+
 require __DIR__.'/auth.php';

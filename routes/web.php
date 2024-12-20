@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
@@ -11,6 +12,7 @@ Route::get('/', function () {
 
 Route::resource('service', ServiceController::class);
 Route::resource('pesansaran', PesanSaranController::class);
+Route::resource('about', AboutController::class);
 
 
 // Route untuk dashboard dengan middleware auth dan verified

@@ -27,6 +27,8 @@ Route::get('formtestimoni', function () {
 
 Route::resource('service', ServiceController::class);
 
+Route::get('/halo', function () { return view('home'); })->name('home');
+
 
 
 require __DIR__.'/auth.php';

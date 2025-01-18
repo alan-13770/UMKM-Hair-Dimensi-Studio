@@ -1,50 +1,69 @@
-<!-- Tambahkan ini di dalam <head> -->
-<script src="https://cdn.ckeditor.com/ckeditor5/35.0.1/classic/ckeditor.js"></script>
-
-<x-app-layout>
-    <div class="max-w-4xl py-6 mx-auto">
-        <h1 class="mb-4 text-2xl font-bold">Tambah Testimoni</h1>
-
-
-        @if ($errors->any())
-        <div class="mb-4 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
-            <strong class="font-bold">Ada yang salah!</strong>
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
-
-    @if (session('success'))
-        <div class="mb-4 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
-            <strong class="font-bold">Sukses!</strong> {{ session('success') }}
-        </div>
-    @endif
-
-        <form action="{{ route('testimoni.store') }}" method="POST" enctype="multipart/form-data">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Testimoni</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* CSS tambahan untuk desain */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .form-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4a4a4a;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-weight: 600;
+            color: #4a4a4a;
+        }
+        .btn-submit {
+            background-color: #4f46e5;
+            color: white;
+            padding: 15px;
+            width: 100%;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-submit:hover {
+            background-color: #4338ca;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto">
+        <form action="{{ route('storeTestimoni') }}" method="POST" enctype="multipart/form-data" class="bg-white p-6 rounded-lg shadow-xl max-w-lg mx-auto mt-10 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
             @csrf
-            <div class="mb-4">
-                <label class="block text-sm font-medium">Nama</label>
-                <input type="text" name="nama" class="block w-full mt-1 border-gray-300 rounded-md" />
+            <h2 class="form-title">Silahkan Berikan Pesan dan Saran Anda untuk Kami</h2>
+
+            <div class="form-group mb-4">
+                <label for="nama" class="text-lg font-medium text-gray-700">Nama</label>
+                <input type="text" name="nama" id="nama" class="form-control mt-2 p-3 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
             </div>
-            <div class="mb-4">
-                <label class="block text-sm font-medium">Pesan dan Saran</label>
-                <textarea name="pesansaran" id="editor" rows="5" class="block w-full mt-1 border-gray-300 rounded-md"></textarea>
+
+            <div class="form-group mb-4">
+                <label for="pesansaran" class="text-lg font-medium text-gray-700">Pesan atau Saran</label>
+                <textarea name="pesansaran" id="pesansaran" class="form-control mt-2 p-3 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-indigo-500" rows="4" required></textarea>
             </div>
-            <div class="mb-4">
-                <label class="block text-sm font-medium">Gambar</label>
-                <input type="file" name="gambar" class="block w-full mt-1" accept="gambar/*" />
+
+            <div class="form-group mb-4">
+                <label for="gambar" class="text-lg font-medium text-gray-700">Upload Gambar (Optional)</label>
+                <input type="file" name="gambar" id="gambar" class="form-control mt-2 p-3 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-indigo-500">
             </div>
-            <button type="submit" class="px-4 py-2 text-white bg-blue-500 rounded">Simpan</button>
+
+            <button type="submit" class="btn-submit hover:bg-indigo-700">
+                Kirim Testimoni
+            </button>
         </form>
     </div>
-    <script>
-        ClassicEditor
-            .create(document.querySelector('#editor'))
-            .catch(error => {
-                console.error(error);
-            });
-    </script>
-</x-app-layout>
+</body>
+</html>

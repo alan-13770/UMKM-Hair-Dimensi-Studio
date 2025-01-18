@@ -12,8 +12,8 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        $service = Service::all();
-        return view('service.index', compact('service'));
+        $services = Service::all(); // Mengambil semua data layanan
+        return view('service.index', compact('services')); // Menampilkan halaman daftar layanan di home dashboard
     }
 
     /**
@@ -21,29 +21,26 @@ class ServiceController extends Controller
      */
     public function create()
     {
-        return view('service.create');
+        return view('service.create'); // Menampilkan form tambah layanan
     }
-    
 
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        $request->validate([
+        // Validasi input
+        $validated = $request->validate([
             'jenis_service' => 'required|string|max:255',
-            'harga' => 'required|string|max:255',
+            'harga' => 'required|numeric',
             'detail' => 'nullable|string',
         ]);
 
-        $service = new Service();
-        $service -> jenis_service = $request->jenis_Sevice;
-        $service -> harga = $request -> harga;
-        $service -> detail = $request -> detail;
+        // Simpan data layanan ke database
+        Service::create($validated);
 
-        $service -> save();
-
-        return redirect()->route('service.index') -> with('success', 'Layanan berhasil ditambahkan');
+        // Redirect ke halaman index dengan pesan sukses
+        return redirect()->route('service.index')->with('success', 'Layanan berhasil diperbarui.');
     }
 
     /**
@@ -51,7 +48,7 @@ class ServiceController extends Controller
      */
     public function show(Service $service)
     {
-        //
+        return view('service.show', compact('service')); // Menampilkan detail layanan
     }
 
     /**
@@ -62,25 +59,25 @@ class ServiceController extends Controller
         return view('service.edit', compact('service'));
     }
 
+
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Service $service)
+    public function update(Request $request, $id)
     {
-        $request->validate([
+        // Validasi input
+        $validated = $request->validate([
             'jenis_service' => 'required|string|max:255',
-            'harga' => 'required|string|max:255',
+            'harga' => 'required|numeric',
             'detail' => 'nullable|string',
         ]);
 
-        $service -> jenis_harga = $request -> jenis_harga;
-        $service -> harga = $request -> harga;
-        $service -> detail = $request -> detail;
+        // Cari dan update data layanan
+        $service = Service::findOrFail($id);
+        $service->update($validated); // Memperbarui data layanan
 
-
-        $service -> save();
-
-        return redirect() -> route('service.index') -> with('success', 'Layanan berhasil diperbaharui');
+        // Redirect ke halaman index dengan pesan sukses
+        return redirect()->route('service.index')->with('success', 'Layanan berhasil diperbarui.');
     }
 
     /**
@@ -88,7 +85,10 @@ class ServiceController extends Controller
      */
     public function destroy(Service $service)
     {
-        $service -> delete();
-        return redirect() -> route('service.index') -> with('success', 'Layanan anda berhasil di hapus');
+        // Menghapus layanan
+        $service->delete();
+
+        // Redirect ke halaman index dengan pesan sukses
+        return redirect()->route('service.index')->with('success', 'Layanan berhasil dihapus.');
     }
 }

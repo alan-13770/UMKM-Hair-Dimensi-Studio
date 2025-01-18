@@ -13,6 +13,7 @@
 
 
 
+
     <!-- Content Section for Services -->
     <div id="service" class="py-20 bg-white text-center">
         <div class="mb-4">
@@ -20,10 +21,10 @@
                 Kembali ke Dashboard
             </a>
         </div>
-        <h2 class="text-3xl font-bold">Daftar Layanan</h2>
+        <h2 class="text-3xl font-bold">Daftar Galeri</h2>
 
         <div class="max-w-4xl mx-auto py-6">
-            <h1 class="text-2xl font-bold mb-6">Daftar Layanan</h1>
+            <h1 class="text-2xl font-bold mb-6">Daftar Galeri</h1>
 
             @if (session('success'))
             <div class="bg-green-500 text-white p-4 rounded mb-4">
@@ -33,8 +34,8 @@
 
             <!-- Tombol untuk menambah layanan -->
             <div class="mb-4">
-                <a href="{{ route('service.create') }}" class="inline-block bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-600">
-                    Tambah Layanan
+                <a href="{{ route('galeripangkas.create') }}" class="inline-block bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-600">
+                    Tambah Galeri
                 </a>
             </div>
 
@@ -44,29 +45,35 @@
                     <thead>
                         <tr class="bg-gray-200">
                             <th class="border border-gray-300 px-4 py-2 text-left">No</th>
-                            <th class="border border-gray-300 px-4 py-2 text-left">Jenis Service</th>
-                            <th class="border border-gray-300 px-4 py-2 text-left">Harga</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left">Jenis Pangkas</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left">Penjelasan</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left">Gambar</th>
                             <th class="border border-gray-300 px-4 py-2 text-center">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($services as $index => $item)
+                        @foreach ($galeripangkas as $index => $item)
                         <tr class="{{ $loop->even ? 'bg-gray-100' : 'bg-white' }}">
                             <td class="border border-gray-300 px-4 py-2 text-center">{{ $index + 1 }}</td>
-                            <td class="border border-gray-300 px-4 py-2">{{ $item->jenis_service }}</td>
-                            <td class="border border-gray-300 px-4 py-2">{{ $item->harga }}</td>
+                            <td class="border border-gray-300 px-4 py-2">{{ $item->jenis_pangkas }}</td>
+                            <td class="border border-gray-300 px-4 py-2">{{ $item->penjelasan }}</td>
+                            <td class="border border-gray-300 px-4 py-2">
+                                @if ($item->gambar)
+                                <img src="{{ asset('storage/' . $item->gambar) }}" alt="Gambar" class="w-16 h-16">
+                                @endif
+                            </td>
                             <td class="border border-gray-300 px-4 py-2 text-center">
                                 <!-- Tombol Edit -->
-                                <a href="{{ route('service.edit', $item->id) }}" class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">
+                                <a href="{{ route('galeripangkas.edit', $item->id) }}" class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">
                                     Edit
                                 </a>
 
                                 <!-- Form untuk Hapus -->
-                                <form action="{{ route('service.destroy', $item->id) }}" method="POST" class="inline-block">
+                                <form action="{{ route('galeripangkas.destroy', $item->id) }}" method="POST" class="inline-block">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 ml-2"
-                                        onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">
+                                        onclick="return confirm('Apakah Anda yakin ingin menghapus galeri ini?');">
                                         Hapus
                                     </button>
                                 </form>

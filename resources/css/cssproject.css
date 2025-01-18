@@ -1,0 +1,41 @@
+/* cssproject.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Pastikan navbar berada di atas elemen lainnya */
+}
+
+.hero-header {
+    margin-top: 70px; /* Sesuaikan dengan tinggi navbar agar konten tidak tertutup */
+}
+
+/* Full-width styling */
+.full-width-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.full-width-header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-header {
+    position: relative;
+    min-height: 100vh; /* Make it cover the full viewport height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: 100%;
+    position: sticky; /* Keep navbar visible on scroll */
+    top: 0;
+    z-index: 10;
+}

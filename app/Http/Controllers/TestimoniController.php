@@ -2,106 +2,44 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\testimoni;
-use Illuminate\Support\Facades\Storage;
+use App\Models\Testimoni;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Storage;
 
 class TestimoniController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
+    public function showDashboard()
+    {
+        $testimoni = Testimoni::all();
+        return view('testimoni.index', compact('testimoni')); // Menggunakan view yang sama dengan dashboard reservasi
+    }
+    // Menampilkan semua testimoni (halaman index)
     public function index()
     {
         $testimoni = Testimoni::all();
-        return view('testimoni.index', compact('testimoni'));
+        return view('adminhome', compact('testimoni'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
+    // Menampilkan form untuk membuat testimoni baru (halaman create)
     public function create()
     {
         return view('testimoni.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
+    // Menyimpan testimoni yang dibuat
+
+    public function destroy($id)
     {
-        $request->validate([
-            'nama' => 'required|string|max:255',
-            'pesansaran' => 'required|string|max:255',
-            'gambar' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
-        ]);
+        $testimoni = Testimoni::findOrFail($id);
 
-        $testimoni = new Testimoni();
-        $testimoni -> nama = $request->nama;
-        $testimoni -> pesansaran = $request -> pesansaran;
-
-        if ($request->hasFile('gambar')){
-            $testimoni -> gambar = $request -> file('gambar') -> store('images', 'public');
+        // Menghapus gambar yang terkait
+        if ($testimoni->gambar) {
+            Storage::delete('public/' . $testimoni->gambar);
         }
 
-        $testimoni -> save();
+        $testimoni->delete();
 
-        return redirect()->route('testimoni.index') -> with('success', 'Saran anda berhasil ditambahkan');
-        
-       
-    }
-
- 
-    public function show(testimoni $testimoni)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(testimoni $testimoni)
-    {
-        return view('testimoni.edit', compact('testimoni'));
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, testimoni $testimoni)
-    {
-        $request->validate([
-            'nama' => 'required|string|max:255',
-            'pesansaran' => 'required|string|max:255',
-            'gambar' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
-        ]);
-
-        $testimoni -> nama = $request -> nama;
-        $testimoni -> pesansaran = $request -> pesansaran;
-
-        if ($request ->hasFile('gambar')){
-            if ($testimoni -> gambar){
-                Storage::delete('public/'. $testimoni -> gambar);
-            }
-            $testimoni -> gambar = $request -> file('gambar') -> store('images', 'public');
-        }
-
-        $testimoni -> save();
-
-        return redirect() -> route('testimoni.index') -> with('success', 'Testimoni berhasil diperbaharui');
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(testimoni $testimoni)
-    {
-        if ($testimoni -> gambar){
-            Storage::delete('public/'.$testimoni -> gambar);
-        }
-
-        $testimoni -> delete();
-        return redirect() -> route('testimoni.index') -> with('success', 'Testimoni anda berhasil di hapus');
+        return redirect()->route('testimoni.index')->with('success', 'Testimoni berhasil dihapus');
     }
 }

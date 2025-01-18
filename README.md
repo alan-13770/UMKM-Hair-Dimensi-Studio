@@ -74,35 +74,37 @@ mengelola data Website dan Customer bisa melihat dan mengunjungi website serta m
 | Gambar | Penjelasan |
 | ------ | ------ |
 | ![alt text](Foto_Laporan/login.jpeg?raw=true) | Pada bagian ini, admin dapat melakukan login dengan tujuan untuk mengatur dan mengelola data yang ditampilkan di halaman company profile website.|
-| ![alt text](Foto_Laporan/dashboard.jpg?raw=true)   | Ini merupakan halaman utama jika user sudah bisa melakukan login.   |
-| ![alt text](Foto_Laporan/slider.jpeg?raw=true) | Ini adalah menu CRUD Slider, Admin dapat melakukan tambah data, edit data, dan hapus data.    |
-| ![alt text](Foto_Laporan/menu.jpeg?raw=true) | Ini adalah menu CRUD Menu, Admin dapat melakukan tambah data, edit data, dan hapus data.   |
-| ![alt text](Foto_Laporan/promo.jpeg?raw=true)    | Ini adalah menu CRUD Promo, Admin dapat melakukan tambah data, edit data, dan hapus data.  |
-| ![alt text](Foto_Laporan/informasi.jpeg?raw=true)  | Ini adalah menu CRUD Informasi, Admin dapat melakukan tambah data, edit data, dan hapus data.   |
-| ![alt text](Foto_Laporan/testimoni.jpeg?raw=true)  | Ini adalah menu CRUD Testimoni, Admin dapat melakukan tambah data, edit data, dan hapus data.   |
-| ![alt text](Foto_Laporan/about.jpeg?raw=true) | Ini adalah menu dari About Us, disini tidak menggunakan CRUD, tetapi hanya menggunakan update atau edit data, sehingga data-data yang sudah diinput sebelumnya diubah menjadi yang baru   |
-| ![alt text](Foto_Laporan/contact.jpeg?raw=true)    | Contact juga seperti itu, mengedit atau mengupdate data yang ada.   |
-| ![alt text](Foto_Laporan/home.jpeg?raw=true)   | Ini merupakan halaman luaran dari website yang nantinya sebagai tampilan yang bisa dilihat oleh customer. |
+| ![alt text](Foto_Laporan/dashboard.jpg?raw=true)   | Ini adalah tampilan halaman utama jika sudah login   |
+| ![alt text](Foto_Laporan/crudhero.jpeg?raw=true) | di halaman utama yang menampilkan informasi visual seperti  judul, dan deskripsi yang menarik perhatian pengunjung  |
+| ![alt text](Foto_Laporan/crudservice.jpg?raw=true) | Pada halaman ini akan tampil jenis layanan beserta deskripsinya |
+| ![alt text](Foto_Laporan/crudtestimoni.jpg.jpeg?raw=true)    | Halaman ini akan menampilkan review dari customer  |
+| ![alt text](Foto_Laporan/crudreservasi.jpg?raw=true)  | Pada halaman ini, akan ditampilkan data dari pelanggan yang telah melakukan reservasi.   |
+| ![alt text](Foto_Laporan/crudgaleri.jpg?raw=true)  | Ini Halaman ini menampilkan jenis pangkas beserta deskripsinya |
+| ![alt text](Foto_Laporan/crudaboutus.jpg?raw=true) | Ini Halaman ini berisi latar belakang dari dimensi hair studio  |
+| ![alt text](Foto_Laporan/crudinformasi.jpg?raw=true)    | Ini adalah menu CRUD Informasi, Admin dapat melakukan tambah data, edit data, dan hapus data  |
+
 
 
 **Halaman User**
 | Gambar | Penjelasan |
 | ------ | ------ |
-| ![alt text](Foto_Laporan/home.jpeg?raw=true)|  Ini merupakan tampilan luaran yang ada pada website yang bisa dijelajahi oleh pengunjung.   |
-| ![alt text](Foto_Laporan/aboutCust.jpeg?raw=true)   | Tampilan About Us menampilkan tentang UMKM ini berjalan.   |
-| ![alt text](Foto_Laporan/informasiCust.jpeg?raw=true) |  Tampilan Informasi menampilkan informasi terbaru dari UMKM |
-| ![alt text](Foto_Laporan/testimoniCust.jpeg?raw=true) | Tampilan testimoni menampilkan customer yang memberikan review kepada produk UMKM  |
-| ![alt text](Foto_Laporan/menu.jpeg?raw=true)    | Tampilan Menu menampilkan semua menu atau produk dari UMKM nya  |
-| ![alt text](Foto_Laporan/promo.jpeg?raw=true)  | Tampilan Promo menampilkan semua promo yang tersedia dari UMKM nya   |
-| ![alt text](Foto_Laporan/contactCust.jpeg?raw=true)  |Tampilan Contact untuk menunjukkan lokasi serta informasi media sosial dari UMKM nya.   |
+| ![alt text](Foto_Laporan/readaboutus.jpg?raw=true)|  Tampilan About Us menampilkan tentang UMKM ini berjalan
+  |
+| ![alt text](Foto_Laporan/readgaleri.jpg?raw=true)   | Menampilkan tentang gaya rambut   |
+| ![alt text](Foto_Laporan/readservice.jpg?raw=true) |  Menampilkan tentang jenis layanan yang disediakan oleh Dimensi Hair Studio |
+| ![alt text](Foto_Laporan/crudtestimoni.jpg?raw=true) | Tampilan testimoni menampilkan customer yang memberikan review
+kepada produk UMKM
+ |
+| ![alt text](Foto_Laporan/crudreservasi.jpg?raw=true)    | Tampilan ini menampilkan data yang harus diisi jika ingin melakukan reservasi |
+
 
 
 **2.1.3 Antarmuka perangkat keras**
-![alt text](Foto_Laporan/PerangkatKeras.png?raw=true)
+![alt text](Foto_Laporan/perangkatkeras.png?raw=true)
 
-Antarmuka perangkat keras yang digunakan untuk mengoperasikan Perangkat Lunak Sistem Babe Thai Tea  yaitu : 
+Antarmuka perangkat keras yang digunakan untuk mengoperasikan Perangkat Lunak Sistem Dimensi Hair Studio yaitu : 
+PC / laptop Untuk Menjalankan Aplikasi
 
-- PC / Laptop Untuk menjalankan Aplikasi ini.
 
 **2.1.4 Antarmuka perangkat lunak**
 
@@ -123,9 +125,8 @@ tidak ada
 | Operasi | Fungsi |
 | ------ | ------ |
 | Login | Digunakan untuk mengakses aplikasi    |
-| Tambah Data    |    Digunakan untuk memasukkan data-data    |
-| Kembali |  Digunakan untuk kembali ke halaman sebelumnya |
-| Hapus | Digunakan untuk menghapus data|
+| Input Data    |    Digunakan untuk memasukkan data-data    |
+| Hapus | Digunakan untuk menghapus data |
 | Edit       |   Digunakan untuk mengubah data     |
 | View      |   Digunakan untuk menampilkan data     |
 | Submit      |     Digunakan untuk menyimpan data   |
@@ -135,131 +136,125 @@ tidak ada
 tidak ada
 
 ## 2.2 Spesifikasi kebutuhan fungsional
+![alt text](Foto_Laporan/kebutuhanfungsional.jpg?raw=true)
 **2.2.1 Admin Login**
 
 Use Case: Login
 
 Diagram:
-![alt text](Foto_Laporan/diagramAdmin.png?raw=true)
+![alt text](Foto_Laporan/diagramlogin.jpg?raw=true)
 
-Deskripsi Singkat 
-Admin melakukan login terlebih dahulu sebelum masuk ke tampilan home admin, apabila gagal login akan muncul pesan alert error login. 
-
+Deskripsi Singkat
+Admin melakukan login terlebih dahulu sebelum masuk ke tampilan home admin.
 Deskripsi Langkah-Langkah
-1. Admin melakukan login dengan username dan password.
-2. Sistem melakukan validasi login.
-3. Bila sukses sistem akan mengarahkan ke home admin.
-4. Bila gagal sistem akan menampilkan peringatan.
+
+Admin melakukan login dengan username dan password.
+Sistem melakukan validasi login.
+Bila sukses sistem akan mengarahkan ke home admin.
 
 Xref: Bagian 3.2.1, Login Admin
 
-**2.2.2 Admin Input Menu**
+
+**2.2.2 Admin Input Herosection**
 
 Use Case: Input Data Menu
 
 Diagram:
 
-![alt text](Foto_Laporan/diagramMenu.png?raw=true)
-
-Deskripsi Singkat
-Sistem dapat menampilkan halaman input menu dan Admin menginputkan menu
+![alt text](Foto_Laporan/diagramherosection.jpg?raw=true)
 
 Deskripsi Langkah- langkah:
-1. Sistem akan menampilkan tampilan data menu.
-2. Admin dapat melihat,menambahkan, dan mengupload nama menu , harga dan foto menu.
-3. Sistem akan menyimpan ke database.
-4. sudah disimpan sistem akan menampilkan notifikasi data berhasil ditambahkan.
+Sistem akan menampilkan tampilan herosection
+Admin dapat melihat,menambahkan, dan mengupload dari judul,penjelasan dan gambar.
+Sistem akan menyimpan ke database.
+sudah disimpan sistem akan menampilkan peringatan
+Xref: Bagian 3.2.3, Input HeroSection
 
-Xref: Bagian 3.2.2, Input Data Menu
 
-**2.2.3 Admin Input Slider**
+**2.2.3 Admin Input Service**
 
-Use Case: Input Data Slider
+Use Case: Input Service
 
 Diagram:
-![alt text](Foto_Laporan/diagramSlider.jpeg?raw=true)
+![alt text](Foto_Laporan/diagramservice.jpg?raw=true)
 
-Deskripsi Singkat
-Sistem dapat menampilkan halaman slider dan Admin menginputkan slider.
+Deskripsi Singkat Sistem dapat menampilkan halaman input slide dan Admin menginputkan slide.
+
 
 Deskripsi Langkah- langkah:
-1. Sistem akan menampilkan tampilan data slider.
-2. Admin dapat melihat,menambahkan, dan mengupload gambar slider.
-3. Sistem akan menyimpan ke database.
-4. Sudah disimpan sistem akan menampilkan notifikasi data berhasil ditambahkan.
-
-Xref: Bagian 3.2.3, Input Data Slider
-
-**2.2.4 Admin Input Promo**
-
-Use Case: Input data Promo
-
-Diagram:![alt text](Foto_Laporan/diagramPromo.jpeg?raw=true)
+Sistem akan menampilkan tampilan service
+Admin dapat melihat,menambahkan, dan mengupload
+Sistem akan menyimpan ke database
+sudah disimpan sistem akan menampilkan peringatan
+Xref: Bagian 3.2.3, Input Service
 
 
-Deskripsi Singkat
-Sistem dapat menampilkan halaman promo dan Admin menginputkan promo.
+**2.2.4 Admin Mengelola Testimoni**
+
+Use Case: Meninput Testiomoni
+
+Diagram:![alt text](Foto_Laporan/diagramtestimoni.jpg?raw=true)
+
+
+Deskripsi Singkat Sistem dapat menampilkan halaman input about dan Admin menginputkan about.
+
 Deskripsi Langkah- langkah:
-1. Sistem akan menampilkan tampilan data promo.
-2. Admin dapat melihat,menambahkan, dan mengupload foto promo dan deskripsi.
-3. Sistem akan menyimpan ke database.
-4. Sudah disimpan sistem akan menampilkan notifikasi data berhasil ditambahkan.
+Sistem akan menampilkan tampilan data testimoni
+Admin dapat melihat,menambahkan, dan mengupload nama, pesansaran 
+Sistem akan menyimpan ke database.
+sudah disimpan sistem akan menampilkan peringatan.
+Xref: Bagian 3.2.3, Input Testimoni
 
-Xref: Bagian 3.2.3, Input Data Promo
+**2.2.5 Admin Mengelola Service**
 
-**2.2.5 Admin Input Informasi**
+Use Case: Mengelola Service
 
-Use Case: Input data Informasi
-
-Diagram:![alt text](Foto_Laporan/diagramInformasi.jpeg?raw=true)
+Diagram:![alt text](Foto_Laporan/diagramservice.jpg?raw=true)
 
 
-Deskripsi Singkat
-Sistem dapat menampilkan halaman informasi dan Admin menginputkan informasi.
+Deskripsi Singkat Sistem dapat menampilkan halaman input reservasi dan Admin mengelola halaman reservasi
+
 Deskripsi Langkah- langkah:
-1. Sistem akan menampilkan tampilan data informasi.
-2. Admin dapat melihat,menambahkan, dan mengupload  judul, deskripsi dan gambar.
-3. Sistem akan menyimpan ke database.
-4. Sudah disimpan sistem akan menampilkan notifikasi data berhasil ditambahkan.
+.Sistem akan menampilkan tampilan data reservasi
+Admin dapat melihat data reservasi
+Sistem akan menyimpan ke database.
+sudah disimpan sistem akan menampilkan peringatan.
+Xref: Bagian 3.2.3, Mengelola Data Reservasi
 
-
-Xref: Bagian 3.2.3, Input Data Informasi
 
 **2.2.6 Admin Input Testimini**
 
 Use Case: Input Data Testimoni
 
-Diagram:![alt text](Foto_Laporan/diagramTestimoni.png?raw=true)
+Diagram:![alt text](Foto_Laporan/diagramgaleri.jpg?raw=true)
+
+
+Deskripsi Singkat Sistem dapat menampilkan halaman input promo dan Admin menginputkan promo.
+
+Deskripsi Langkah- langkah:
+Sistem akan menampilkan tampilan galeri seperti dokumentasi
+Admin dapat melihat,menambahkan, dan mengupload jenis pangkas,dan penjelasan
+Sistem akan menyimpan ke database.
+sudah disimpan sistem akan menampilkan peringatan.
+Xref: Bagian 3.2.3, Input data Galeri pangkas rambut
+
+
+
+**2.2.7 Mengelola Informasi**
+
+Use Case: Mengelola Informasi
+
+Diagram:
+![alt text](Foto_Laporan/mengunjungiwebsite.jpg?raw=true)
 
 
 Deskripsi Singkat
-Sistem dapat menampilkan halaman informasi dan Admin menginputkan testimoni.
-Deskripsi Langkah- langkah:
-1. Sistem akan menampilkan tampilan data testimoni.
-2. Admin dapat melihat,menambahkan, dan mengupload  judul, deskripsi dan gambar.
-3. Sistem akan menyimpan ke database.
-4. Sudah disimpan sistem akan menampilkan notifikasi data berhasil ditambahkan.
-
-
-Xref: Bagian 3.2.3, Input data Testimoni
-
-
-**2.2.7 pengunjung Mengunjungi website**
-
-Use Case: Mengunjungi website
-
-Diagram:
-![alt text](Foto_Laporan/diagramPengunjung.png?raw=true)
-
-Deskripsi Singkat 
-Sistem dapat menampilkan halaman company profile yaitu (Home, About Us, Informasi, Testimoni, Menu, Promo, Contact) dan pengunjung dapat melihat semua informasi yang tersedia di website.
+Sistem dapat menampilkan halaman company profile yaitu (Home, About Us, Galeri,Service, Testimoni, Informasi) dan Customer dapat melihat semua informasi yang tersedia di website..
 
 Deskripsi Langkah-Langkah
-1. Sistem akan menampilkan tampilan halaman utama
-2. Pengunjung dapat melihat tampilan home, about us, informasi, testimoni, menu, promo, contact dan juga melakukan testimoni
+Sistem akan menampilkan halaman-halaman konten.
+pengunjung melihat melihat informasi yang ada pada website seperti  (Home, About Us,Galeri,Service, Testimoni, Informasi)
 
-
-Xref: Bagian 3.2.7, Mengunjugi Website
 
 ## 2.3 Spesifikasi kebutuhan non-fungsional
 - tabel kebutuhan non-fungsional
@@ -285,7 +280,8 @@ tidak ada
 
 
 ## 3.1 Persyaratan Antarmuka Eksternal
-Untuk admin yang akan mengakses website ini diperlukan login terlebih dahulu, kemudian akan memasukkan username dan password, lalu sistem akan validasi login. Setelah login berhasil Admin dapat melihat tampilan admin yang ada di website tersebut. Untuk pengunjung hanya perlu membuka halaman website, kemudian pengunjung dapat melihat informasi dan data product yang ada di website tersebut.
+Untuk admin yang akan mengakses website ini diperlukan registrasi terlebih dahulu, kemudian akan login dengan memasukkan username dan password, lalu sistem akan validasi login. Setelah login berhasil Admin dapat melihat tampilan admin yang ada di website tersebut. Untuk pengunjung hanya perlu membuka halaman website, kemudian pengunjung dapat melihat konten yang ada di website tersebut.
+
 
 ## 3.2 Functional Requirement
 **3.2.1 Login Admin**
@@ -293,28 +289,28 @@ Untuk admin yang akan mengakses website ini diperlukan login terlebih dahulu, ke
 | Nama Fungsi      | Login   |
 | -----------------| ------- |
 | Xref                | Bagian 2.2.1 Admin Login             |
-| Trigger             | Admin Membuka Website Babe Thai Tea|
+| Trigger             | Admin Membuka Website Dimensi Hair Studio|
 | Precondition        | Halaman login                          |
 | Basic Path          | 1. Admin melakukan login dengan username dan password.
 |                     | 2. Sistem melakukan validasi login. |
 |                     | 3. Bila sukses, sistem akan mengarahkan ke home admin.  |
 |                     | 4. Bila gagal, sistem akan menampilkan notifikasi. |
 | Alternative         |  Tidak Ada       |
-| Post Condition      | Admin dapat login dan mengakses website Babe Thai Tea                |
+| Post Condition      | Admin dapat login dan mengakses website Dimensi Hair Studio               |
 | Exception Push      | Username dan password salah                   |
 
-**3.2.2 Admin Input Menu**
+**3.2.2 Admin Input Hero Section**
 | Nama Fungsi | Input Menu|
 | ----------- | ------ |
-| Xref            | Bagian 2.2.2 Admin Input Menu     |
-| Triger          | Admin dapat menginputkan menu       |
-| Precondition    | Admin menginputkan menu Babe Thai Tea ke website |
-| Basic Path      | 1. Sistem akan menampilkan tampilan menu Babe Thai Tea . |
-|                 | 2. Admin dapat melihat, menambahkan, mengedit dan menghapus menu |
-|                 | 3. Sistem akan menyimpan ke database. |
-|                 | 4. Jika sudah disimpan sistem akan menampilkan notifikasi. |
+| Xref            | Bagian 2.2.2 Admin Input  HeroSection  |
+| Triger          | Admin dapat menginputkan  HeroSection      |
+| Precondition    | Admin menginput data HeroSection berupa judul, penjelasan, dan gambar ke website Dimensi Hair Studio |
+| Basic Path      | 1. Sistem menampilkan form untuk menginput data HeroSection |
+|                 | 2. Admin dapat mengisi data judul, deskripsi, dan mengunggah gambar |
+|                 | 3. Sistem akan menyimpan ke database |
+               
 | Alternative     | Tidak ada |     
-| Post Condition  | Admin dapat menginputkan menu Minuman Babe Thai Tea seperti nama menu, harga, foto menu |
+| Post Condition  | HeroSection berhasil ditambahkan dan ditampilkan di halaman utama website. |
 | Exception Push  | Tidak ada  |
 
 
@@ -333,169 +329,218 @@ Untuk admin yang akan mengakses website ini diperlukan login terlebih dahulu, ke
 | Post Condition     | Admin dapat menginputkan slider berupa foto        |
 | Exception Push     | Tidak Ada        |
 
-**3.2.4 Admin Input Promo**
+**3.2.4 Admin Input Service**
 
 | Nama Fungsi        | Input Promo  |
 | ------------------ | ------------ |
-| Xref               | Bagian 2.2.4 Admin Input promo    |
-| Trigger            | Admin dapat menginputkan promo |
-| Precondition       | Admin menginputkan promo ke website|
-| Basic Path         | 1. Sistem akan menampilkan tampilan promo |
-|                    | 2. Admin dapat melihat, menambahkan, mengedit dan menghapus promo  |
-|                    | 3. Sistem akan menyimpan ke database  |
-|                    | 4. Jika sudah disimpan sistem akan menampilkan notifikasi.   |
+| Xref               | Bagian2.2.3 Admin Input Service   |
+| Trigger            | Admin dapat mengelola galeri pangkas rambut |
+| Precondition       | Halaman manajemen layanan (service)|
+| Basic Path         | 1. Admin mengisi nama layanan, deskripsi layanan, harga.|
+|                    | 2. Sistem menampilkan form untuk input layanan  |
+
 | Alternative        | Tidak Ada                                 |
-| Post Condition     | Admin dapat menginputkan promo seperti foto promo dan deskripsi        |
+| Post Condition     | Data layanan (service) berhasil ditambahkan ke website dan ditampilkan pada halaman layanan       |
 | Exception Push     | Tidak Ada        |
 
-**3.2.5 Admin Input Informasi**
+**3.2.5 Admin Mengelola testimoni**
 
 | Nama Fungsi        | Input Informasi     |
 | ------------------ | --------------- |
-| Xref               | Bagian 2.2.5 Admin Input Informasi                  |
-| Trigger            | Admin dapat menginputkan Informasi |
-| Precondition       | Admin menginputkan informasi ke website |
-| Basic Path         | 1. Sistem akan menampilkan tampilan informasi |
-|                    | 2. Admin dapat melihat, menambahkan, mengedit dan menghapus informasi   |
-|                    | 3. Sistem akan menyimpan ke database.   |
-|                    | 4. Jika sudah disimpan sistem akan menampilkan notifikasi.   |
+| Xref               | Bagian 2.2.4 Admin Mengelola Testimoni             |
+| Trigger            | Admin dapat mengelola testimoni pada website |
+| Precondition       | Admin Melihat testimoni |
+| Basic Path         | 1. Sistem akan menampilkan tampilan testimoni |
+|                    | 2. Sistem akan menyimpan ke database   |
+               
 | Alternative        | Tidak Ada                                 |
-| Post Condition     | Admin dapat menginputkan kutipan seperti judul, isi kutipan deskripsi dan gambar       |
+| Post Condition     | Admin dapat membalas pesan saran dari pengunjung
+
+      |
 | Exception Push     | Tidak Ada        |
 
-**3.2.6 Admin Mengelola Testimoni**
+**3.2.6 Admin Mengelola Reservasi**
 
 | Nama Fungsi        | Admin Mengelola testimoni     |
 | ------------------- | ----------------------|
-| Xref               | Bagian 2.2.6 Admin Mengelola testimoni                     |
-| Trigger            | Admin dapat mengelola testimoni pada website |
-| Precondition       | Admin Melihat testimoni  |
-| Basic Path         | 1. Sistem akan menampilkan tampilan testimoni  |
-|                    | 2. Admin dapat melihat, menambahkan, mengedit dan menghapus testimoni  |
-|                    | 3. Sistem akan menyimpan ke database.   |
-|                    | 4. Jika sudah disimpan sistem akan menampilkan notifikasi.   |
+| Xref               | Bagian 2.2.5 Admin Mengelola Reservasi
+                    |
+| Trigger            | Admin dapat Admin dapat mengelola data reservasi pelanggan |
+| Precondition       | Admin mengakses manajemen reservasi |
+| Basic Path         | 1. Sistem menampilkan daftar reservasi yang ada  |
+|                    | 2. Admin dapat Melihat detail reservasi, termasuk nama pelanggan, tanggal, waktu, dan layanan yang dipilih.  |
+|                    | 3. Sistem akan menyimpan ke database   |
+
 | Alternative        |  Tidak Ada                                 |
 | Post Condition     |  Admin Dapat menginputkan data seputar website seperti alamat, pengelola, dan contact person.        |
 | Exception Push     | Tidak Ada        |
 
-**3.2.6 Pengunjung Mengunjungi website**
+**3.2.6 Admin Input Galeri**
 
 | Nama Fungsi        |    pengunjung  Mengunjungi website             |
 | ------------------- | ---------------------------------- |
-| Xref               | Bagian 2.2.6 Pengunjung Mengunjungi Website          |
-| Trigger            |Pengunjung dapat mengunjungi website dan melihat informasi  dan data produk yang ada pada website Babe Thai Tea yang telah disediakan|
-| Precondition       | Pengunjung Mengunjungi Website |
-| Basic Path         | 1. Sistem akan menampilkan halaman-halaman Home. |
-|                    | 2. Pengunjung melihat informasi yang ada pada website dan juga dapat memberikan testimoni pada website yang tersedia   |
-|                    | 3.pengunjung dapat mengklik tombol kembali ke halaman sebelumnya jika ingin keluar pada halaman konten yang telah dilihat.    |
+| Xref               | Bagian 2.2.6 Admin Input Galeri
+         |
+| Trigger            |Admin dapat input galeri|
+| Precondition       | Admin dapat mengelola (melihat, menambahkan, mengedit, dan menghapus) galeri pangkas di sistem|
+| Basic Path         | 1. Admin mengelola jenis pangkas atau deskripsi yang tersedia |
+|                    | 2. Sistem akan menyimpan ke database   |
 | Alternative        |  Tidak ada  |
-| Post Condition     |  Pengunjung mengunjungi website dan melihat informasi yang tersedia pada website     |
+| Post Condition     |  Admin dapat mengelola galeri pangkas, termasuk menambahkan, mengedit, atau menghapus jenis pangkas dan deskripsinya   |
 | Exception Push     |  Tidak ada   |
+
+**3.2.7  Admin Input Informasi**
+ Nama Fungsi        | Admin Mengelola testimoni     |
+| ------------------- | ----------------------|
+| Xref               | Bagian 2.2.7 Admin Input Informasi
+                    |
+| Trigger            | Admin menginputkan informasi ke website |
+| Precondition       | Admin dapat mengelola (melihat, menambahkan, mengedit, dan menghapus) galeri pangkas di sistem|
+| Basic Path         | 1. Sistem akan menampilkan tampilan informasi  |
+|                    | 2. Admin dapat melihat, menambahkan, mengedit dan
+           menghapus informasi
+ |
+|                    | 3. Sistem akan menyimpan ke database   |
+
+| Alternative        |  Tidak Ada                                 |
+| Post Condition     |  Admin dapat menginputkan, dan mengupload email, nomor, alamat, hari, jam        |
+| Exception Push     | Tidak Ada        |
+
+**3.2.8  Admin Input Informasi**
+ Nama Fungsi        | Pengunjung Mengunjungi Website
+
+    |
+| ------------------- | ----------------------|
+| Xref               | Bagian 2.2.9 Pengunjung Mengunjungi Website
+                    |
+| Trigger            | Pengunjung dapat mengunjungi website dan melihat informasi yang ada pada website Dimensi Hair Studio yang telah disediakan
+
+|
+| Precondition       | Pengunjung Mengunjungi Website|
+| Basic Path         | 1. Sistem akan menampilkan halaman halaman konten
+
+  |
+|                    | 2. Pengunjung melihat informasi yang ada pada website dan juga dapat memberikan pesan saran dan testimoni pada website yang tersedia
+ |             
+
+| Alternative        |  Tidak Ada                                 |
+| Post Condition     |  Pengunjung mengunjungi website dan melihat informasi yang tersedia pada website
+        |
+| Exception Push     | Tidak Ada        |
 
 ## 3.3 Struktur Detail Kebutuhan Non-Fungsional
 ![alt text](Foto_Laporan/erd.png?raw=true)
 **3.3.1 Logika Struktur Data**
 
-Struktur data logika pada sistem Company Profile Babe Thai Tea terdapat struktur Database yang dijelaskan menggunakan ERD.
+Struktur data logika pada sistem Company Profile Dimensi Hair Studio terdapat struktur Database yang dijelaskan menggunakan ERD.
 
 **Tabel Admin**
 |Data Item|Tipe Data|Deskripsi|
 |--|--|--|
 |Id_Admin|int|Auto-increment dari Id_Admin|
-|username|varchar|Berisi username admin untuk mengakses sistem|
+|email|varchar|Berisi username admin untuk mengakses sistem|
 |Password|varchar|Berisi password admin untuk mengakses sistem|
 
 
-**Tabel Slider**
+**Tabel Service**
 |Data Item|Tipe Data|Deskripsi|
 |--|--|--|
-|id_lider|int|Auto-increment dari Id_slider|
-|gambar|varchar|Berisi gambar didalam slider sistem|
-
-
-**Tabel Promo**
-|Data Item|Tipe Data|Deskripsi|
-|--|--|--|
-|id_Promo|int|Auto-increment dari Id_promo|
-|gambar|varchar|Berisi gambar didalam promo sistem|
-|deskripsi|text|Berisi deskripsi promo sistem|
-
-**Tabel Informasi**
-|Data Item|Tipe Data|Deskripsi|
-|--|--|--|
-|id_informasi|int|Auto-increment dari id_informasi|
-|judul|varchar|Berisi judul pada informasi sistem|
-|deskripsi|text|Berisi deskripsi informasi sistem|
-|gambar|varchar|Berisi gambar didalam informasi sistem|
+|id|int|Auto-increment dari Id|
+|nama|varchar|Berisi string nama|
+|nomor_wa|varchar|Berisi string nomor wa|
+|jam|varchar|Berisi string waktu|
 
 
 **Tabel Testimoni**
-|Data Item|Tipe Data|Deskripsi|
-|--|--|--|
-|id_Testimoni|int|Auto-increment dari id_testimoni|
-|judul|varchar|Berisi judul pada testimoni sistem|
-|deskripsi|text|Berisi deskripsi testimoni sistem|
-|gambar|varchar|Berisi gambar didalam testimoni sistem|
+| Data Item     | Tipe Data   | Deskripsi                                                                                     |
+|---------------|-------------|-----------------------------------------------------------------------------------------------|
+| id            | int         | Auto-increment ID, digunakan sebagai pengidentifikasi unik untuk setiap testimoni.           |
+| nama          | varchar     | Berisi nama pelanggan yang memberikan ulasan atau feedback tentang layanan yang diterima.    |
+| pesan_saran   | varchar     | Menampung masukan atau saran dari pelanggan mengenai layanan yang mereka terima.             |
+| gambar        | varchar     | Berisi jalur atau nama file gambar yang diunggah oleh pelanggan sebagai bagian dari testimoni.|
 
-**Tabel Menu**
-|Data Item|Tipe Data|Deskripsi|
-|--|--|--|
-|id_menu|int|Auto-increment dari Id_menu|
-|nama_menu|varchar|Berisi nama pada menu sistem|
-|harga|text|Berisi harga pada menu sistem|
-|gambar|varchar|Berisi gambar didalam menu sistem|
+**Tabel Reservasi**
+| Data Item  | Tipe Data | Deskripsi                                                                                  |
+|------------|-----------|--------------------------------------------------------------------------------------------|
+| id         | int       | Auto-increment dari ID.                                                                   |
+| nama       | varchar   | Berisi tentang catatan nama pelanggan yang melakukan reservasi di Dimensi Hair Studio.     |
+| nomor_wa   | varchar   | Berisi tentang catatan nomor HP customer yang melakukan reservasi.                         |
+| jam        | varchar   | Berisi tentang catatan waktu yang dipilih pelanggan untuk reservasi.                       |
+| tanggal    | date      | Berisi catatan tanggal pelanggan yang melakukan reservasi.                                 |
 
 
+
+**Tabel Galeri Pangkas**
+| Data Item      | Tipe Data | Deskripsi                                 |
+| id             | int       | Auto-increment dari ID.                                                                     |
+| jenis_pangkas  | varchar   | Berisi informasi mengenai berbagai jenis layanan pemangkasan rambut yang ditawarkan di Dimensi Hair Studio. |
+| penjelasan     | varchar   | Berisi keterangan atau deskripsi lebih rinci mengenai setiap jenis layanan pemangkasan rambut yang ditawarkan. |
+
+
+**Tabel Informasi**
+| Data Item | Tipe Data | Deskripsi                                                                                   |
+|
+| id        | int       | Auto-increment dari ID.                                                                     |
+| email     | varchar   | Berisi alamat email yang digunakan untuk kontak atau komunikasi.                            |
+| nomor     | varchar   | Berisi nomor telepon yang dapat digunakan untuk menghubungi.                                |
+| alamat    | varchar   | Berisi alamat fisik yang relevan dengan informasi yang disediakan.                          |
+| hari      | varchar   | Berisi informasi mengenai hari yang tersedia atau relevan dengan aktivitas tertentu.         |
+| jam       | varchar   | Berisi informasi mengenai jam operasional atau waktu yang relevan.                          |
+
+
+**Tabel Herosection**
+| Data Item  | Tipe Data | Deskripsi                                                                                      |
+
+| id         | int       | Auto-increment dari ID.                                                                        |
+| judul      | varchar   | Berisi informasi utama yang ditujukan untuk menarik perhatian pengunjung saat pertama kali membuka website. |
+| penjelasan | varchar   | Berisi informasi tambahan yang memperjelas atau memberikan detail lebih lanjut.                |
+| gambar     | varchar   | Berisi gambar atau visual yang mewakili judul dan penjelasan yang ditampilkan.                 |
 
 ## Pembagian Tugas Laporan
 BAB 1
 
-      1.1 Tengku Muhamad Raafi
-
-      1.2 Tengku Muhamad Raafi
-
-      1.3 Zikrul Cahyadi
-
-      1.4 Zikrul Cahyadi
-
-      1.5 Zikrul Cahyadi
+     Muhammad Sabil Ramadhan
 
 BAB 2
 
-      2.1 Zikrul Cahyadi, Franky Young, Tengku Muhamad Raafi
+      2.1 Tengku Muhammad Hadin Nazmi
 
-      2.2 Zikrul Cahyadi, Tengku Muhamad Raafi
+      2.2 Muhammad Yahya
 
-      2.3 Tengku Muhamad Raafi
+      2.3 Muhammad Sabil Ramadhan
 
-      2.4 Tengku Muhamad Raafi
+      2.4 Muhammad Sabil Ramadhan
 
-      2.5 Tengku Muhamad Raafi
+      2.5 Muhammad Sabil Ramadhan
 
-      2.6 Zikrul Cahyadi, Franky Young, Tengku Muhamad Raafi
 
-      2.7 Zikrul Cahyadi, Franky Young, Tengku Muhamad Raafi
+      2.6 Muhammad Sabil Ramadhan
+
+
+      2.7 Muhammad Sabil Ramadhan
+
 
 BAB 3
 
-      3.1 Zikrul Cahyadi
+      3.1 Tengku Muhammad Hadin Nazmi
 
-      3.2 Zikrul Cahyadi
+      3.2 Muhammad Sabil Ramadhan
 
-      3.3 Franky Young, Zikrul Cahyadi
+
+      3.3 Muhammad Sabil Ramadhan, Tengku Muhammad Hadin Nazmi
+
 
 ## PEMBAGIAN TUGAS PROJECT
-1.	Franky Young
-      -	Login Untuk Admin
-      -	CRUD Testimoni
-2.	Tengku Muhamad Raafi
-      -	Tampilan Company Profile (Home, About Us, Informasi, Testimoni, Menu, Promo, Contact) 
+1.	Tengku Muhammad Hadin Nazmi
+      -	CRUD herosection
+      -	CRUD Reservasi
+      -     About us 
+2.	Muhammad Sabil Ramadhan
+      -	CRUD service
+      -	CRUD Testimoni 
+3.	Muhammad Yahya
+      -	CRUD Galeri
       -	CRUD Informasi
-      -	Menu About Us dan Contact (Tidak CRUD , tapi menggunakan update data)
-      -	Tampilan Dashboard Admin (Menu: CRUD Slider, CRUD Menu, CRUD Promo, CRUD Informasi, CRUD Testimoni, About, Contact)
-3.	Zikrul Cahyadi
-      -	CRUD Slider
-      -	CRUD Menu
-      -	CRUD Promo
+
 
 
